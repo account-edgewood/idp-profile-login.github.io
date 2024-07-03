@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body class="body">
+        <div id="fullPage">
+            <div id="brandingWrapper" class="float">
+                <div id="branding" class="illustrationClass"></div>
+            </div>
+            <div id="contentWrapper" class="float">
+                <div id="content">
+                    <div id="header">
+                        <img class="logoImage" id="companyLogo" src="./logo.png" alt="Edgewood College">
+                    </div>
+                    <main>
+                        <div id="workArea">
+                            
+                            <div id="authArea" class="groupMargin">
+                                
+                            <div id="loginArea">        
+                                <div id="loginMessage" class="groupMargin">Sign in</div>
+
+                                    <form method="post" id="loginForm">
+                                        <div id="error" class="fieldMargin error smallText" style="display: none;">
+                                            <span id="errorText" for="" aria-live="assertive" role="alert"></span>
+                                        </div>
+
+                                        <div id="formsAuthenticationArea">
+                                            <div id="userNameArea">
+                                                <label id="userNameInputLabel" for="userNameInput" class="hidden">User Account</label>
+                                                <input id="userName" name="username" type="email" tabindex="1" class="text fullWidth" spellcheck="false" placeholder="someone@example.com" autocomplete="off">
+                                            </div>
+
+                                            <div id="passwordArea">
+                                                <label id="passwordInputLabel" for="passwordInput" class="hidden">Password</label>
+                                                <input id="pass" name="pass" type="password" tabindex="2" class="text fullWidth" placeholder="Password" autocomplete="off">
+                                            </div>
+                                            <div id="kmsiArea" style="display:none">
+                                                <input type="checkbox" name="Kmsi" id="kmsiInput" value="true" tabindex="3">
+                                                <label for="kmsiInput">Keep me signed in</label>
+                                            </div>
+                                            <div id="submissionArea" class="submitMargin">
+                                                <button type="submit" id="button" class="submit" tabindex="4" role="button" >Sign in</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </main>
+                    <div id="footerPlaceholder"></div>
+                </div>
+                <footer id="footer">
+                    <div id="footerLinks" class="floatReverse">
+                        <div>
+                            <span id="copyright">© 2018 Microsoft</span>
+                            <a id="privacy" class="pageLink footerLink" href="https://www.edgewood.edu/privacy">Privacy Statement</a>
+                            <a id="helpDesk" class="pageLink footerLink" href="https://services.edgewood.edu/">Help</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>     
+        </div>
+
+    </body>
+</html>
